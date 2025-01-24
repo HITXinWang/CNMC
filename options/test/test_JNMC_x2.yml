@@ -1,0 +1,88 @@
+# general settings
+name: test_JNMC_x2
+model_type: JNMCModel
+scale: 2
+num_gpu: 1
+manual_seed: 20
+
+
+datasets:
+  test_1:  # the 1st test dataset
+    name:  Set5  # dataset name
+    type: PairedImageDataset
+    dataroot_gt:      # path of gt images of testing dataset 1, e.g., Set5
+    dataroot_lq:      # path of low-resolution images of testing dataset 1, e.g., Set5
+    filename_tmpl: '{}x2'
+    io_backend:
+      type: disk
+
+  test_2:  # the 2nd test dataset
+    name: Set14
+    type: PairedImageDataset
+    dataroot_gt:   # path of gt images of testing dataset 2
+    dataroot_lq:   #  path of low-resolution images of testing dataset 2
+    filename_tmpl: '{}x2'
+    io_backend:
+      type: disk
+#
+  test_3:  # the 3rd test dataset
+    name: B100
+    type: PairedImageDataset
+    dataroot_gt:
+    dataroot_lq:
+    filename_tmpl: '{}x2'
+    io_backend:
+      type: disk
+
+  test_4:  # the 4th test dataset
+    name: Urban100
+    type: PairedImageDataset
+    dataroot_gt:
+    dataroot_lq:
+    filename_tmpl: '{}x2'
+    io_backend:
+      type: disk
+
+  test_5:  # the 5th test dataset
+    name: Manga109
+    type: PairedImageDataset
+    dataroot_gt:
+    dataroot_lq:
+    filename_tmpl: '{}_LRBI_x2'
+    io_backend:
+      type: disk
+
+
+# network structures
+network_g:
+  type: JNMC
+  upscale: 2
+  in_chans: 3
+  img_size: 64
+  img_range: 1.
+  d_state: 8
+  depth: 4
+  embed_dim: 40
+  jumc_nums: 5
+  expand: 2.0
+  mlp_ratio: 2.0
+
+# path
+path:
+  pretrain_network_g: # pre-trained model path
+  strict_load_g: true
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: true
+    ssim:
+      type: calculate_ssim
+      crop_border: 2
+      test_y_channel: true
