@@ -8,7 +8,8 @@ Our paper will be released soon.
 
 
 ## Color-coded animations to visualize the spatial disruption of Mamba (To vividly illustrate Fig.2 in the paper)
-https://github.com/user-attachments/assets/f756fc1d-451d-4107-9427-5ca69aac2029
+https://github.com/user-attachments/assets/5711cc71-66f7-40c1-840c-b003883782fe
+
 
 
 
