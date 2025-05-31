@@ -1,6 +1,6 @@
 
 ## A Collaborative Network of Mamba and CNN for Lightweight Image Super-Resolution
-Congratulations! Our paper has been accepted by IEEE Transactions on Consumer Electronics. It can be downloaded at [CNMC](https://ieeexplore.ieee.org/abstract/document/11010097/)! 
+Congratulations! Our paper has been accepted by IEEE Transactions on Consumer Electronics. It can be downloaded at [here](https://ieeexplore.ieee.org/abstract/document/11010097/)! 
 
 
 <p align="center">
