@@ -46,7 +46,7 @@ python -m torch.distributed.launch --nproc_per_node=2 --master_port=12345 basics
 ```
 
 ### Testing
-Correspondingly, you may create/edit the yml file in the path 'options/test/', for testing the trained model. The structure of the yml file for testing, is similar to the above yml file for training. The testing comman could be：
+Correspondingly, you may create/edit the yml file in the path 'options/test/', for testing the trained model. The structure of the yml file used for testing, is similar to the above yml file used for training. The testing comman could be：
 
 ```
 python basicsr/test.py -opt options/test/XXX.yml
