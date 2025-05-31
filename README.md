@@ -1,6 +1,6 @@
 
 ## A Collaborative Network of Mamba and CNN for Lightweight Image Super-Resolution
-Congratulations! Our paper has been accepted by IEEE Transactions on Consumer Electronics. It can be downloaded at [here](https://ieeexplore.ieee.org/abstract/document/11010097/)! 
+Congratulations! Our paper has been accepted by IEEE Transactions on Consumer Electronics. It is availble at [here](https://ieeexplore.ieee.org/abstract/document/11010097/)! 
 
 
 <p align="center">
@@ -46,7 +46,7 @@ python -m torch.distributed.launch --nproc_per_node=2 --master_port=12345 basics
 ```
 
 ### Testing
-Correspondingly, you may create/edit the yml file in the path 'options/test/', for testing the trained model. The structure of the yml file used for testing, is similar to the above yml file used for training. The testing comman could be：
+Correspondingly, you may create/edit the yml file in the path 'options/test/', for testing the trained model. The structure of the yml file used for testing, is similar to the above yml file used for training. Then, the testing command could be：
 
 ```
 python basicsr/test.py -opt options/test/XXX.yml
