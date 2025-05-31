@@ -1,6 +1,7 @@
 
 ## A Collaborative Network of Mamba and CNN for Lightweight Image Super-Resolution
-Our paper will be released soon.
+Congratulations! Our paper has been accepted by IEEE Transactions on Consumer Electronics, available at [CNMC](https://ieeexplore.ieee.org/abstract/document/11010097/) 
+
 
 <p align="center">
     <img src="figures/framework.png" style="border-radius: 15px">
@@ -45,10 +46,8 @@ python -m torch.distributed.launch --nproc_per_node=2 --master_port=12345 basics
 ```
 
 ### Testing
-Correspondingly, you may use the instruction below to test the model after training. 
-```
-python basicsr/test.py -opt options/test/test_JNMC_x2.yml
-```
+Correspondingly, you may create a '.yml' file similar to the above training file, to test the trained model. 
+
 
 ## <a name="cite"></a> Citation
 Please cite us and star this repo, if our work is useful for your research. Thanks!
