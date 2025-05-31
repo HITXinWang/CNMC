@@ -46,8 +46,7 @@ python -m torch.distributed.launch --nproc_per_node=2 --master_port=12345 basics
 ```
 
 ### Testing
-Correspondingly, you may create a '.yml' file similar to the above training file, to test the trained model. 
-
+Correspondingly, you may create/edit a '.yml' file in the path 'options/train/', to test the trained model. The structure of the yml file for testing, is similar to the above yml file for training.
 
 ## <a name="cite"></a> Citation
 Please cite us and star this repo, if our work is useful for your research. Thanks!
