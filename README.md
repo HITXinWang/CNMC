@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/3d9c734b-acf6-4bce-be03-3e481177d492
 
 
 
-## <a name="Dependencies"></a>
+## Dependencies <a name="Dependencies"></a>
 
 Our code is runned on the Pytorch framework with the following environment configurations. 
 
