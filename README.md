@@ -39,14 +39,19 @@ For testing, five benchmark datasets, including Set5, Set14, BSD100, Urban100, a
 
 ## Scripts
 ### Training
-For example, after organizing the training dataset, you can use following command to train the model for ×2 SR.
+For example, after organizing the training dataset, you can use following command to train the model for ×2 SR:
 
 ```
 python -m torch.distributed.launch --nproc_per_node=2 --master_port=12345 basicsr/train.py -opt options/train/train_JNMC_x2.yml --launcher pytorch
 ```
 
 ### Testing
-Correspondingly, you may create/edit a '.yml' file in the path 'options/train/', to test the trained model. The structure of the yml file for testing, is similar to the above yml file for training.
+Correspondingly, you may create/edit the yml file in the path 'options/test/', for testing the trained model. The structure of the yml file for testing, is similar to the above yml file for training. The testing comman could be：
+
+```
+python basicsr/test.py -opt options/test/XXX.yml
+```
+
 
 ## <a name="cite"></a> Citation
 Please cite us and star this repo, if our work is useful for your research. Thanks!
